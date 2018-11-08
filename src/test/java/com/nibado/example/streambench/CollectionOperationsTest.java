@@ -14,16 +14,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CollectionOperationsTest {
 
     @TestFactory
-    Stream<DynamicTest> doubleNumbers() {
-        var input = List.of(1, 2, 3, 4);
-        var expected = List.of(2, 4, 6, 8);
-
-        return implementations().map(o ->
-            DynamicTest.dynamicTest(o.getClass().getSimpleName(), () -> assertThat(o.doubleNumbers(input)).isEqualTo(expected))
-        );
-    }
-
-    @TestFactory
     Stream<DynamicTest> squareNumbers() {
         var input = List.of(1, 2, 3, 4);
         var expected = List.of(1, 4, 9, 16);

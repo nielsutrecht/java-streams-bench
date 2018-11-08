@@ -10,12 +10,6 @@ import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.of;
 
 public class StreamCollectionOperations implements CollectionOperations {
-    public List<Integer> doubleNumbers(List<Integer> numbers) {
-        return numbers.stream()
-            .map(n -> n * 2)
-            .collect(toList());
-    }
-
     @Override
     public List<Integer> squareNumbers(List<Integer> numbers) {
         return numbers.stream()

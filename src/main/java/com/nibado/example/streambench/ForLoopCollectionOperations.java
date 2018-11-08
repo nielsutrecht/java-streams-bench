@@ -10,17 +10,6 @@ import static java.util.stream.Collectors.toList;
 
 public class ForLoopCollectionOperations implements CollectionOperations {
     @Override
-    public List<Integer> doubleNumbers(List<Integer> numbers) {
-        List<Integer> result = new ArrayList<>(numbers.size());
-
-        for(int i : numbers) {
-            result.add(i * 2);
-        }
-
-        return unmodifiableList(result);
-    }
-
-    @Override
     public List<Integer> squareNumbers(List<Integer> numbers) {
         List<Integer> result = new ArrayList<>(numbers.size());
 

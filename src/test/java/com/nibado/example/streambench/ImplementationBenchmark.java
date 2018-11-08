@@ -19,16 +19,6 @@ public class ImplementationBenchmark {
     public int impl;
 
     @Benchmark
-    public void doubleNumbers1000() {
-        implementations[impl].doubleNumbers(Data.integers1000);
-    }
-
-    @Benchmark
-    public void doubleNumbers1M() {
-        implementations[impl].doubleNumbers(Data.integers1000000);
-    }
-
-    @Benchmark
     public void squareNumbers1000() {
         implementations[impl].squareNumbers(Data.integers1000);
     }
